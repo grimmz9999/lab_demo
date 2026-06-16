@@ -2,6 +2,8 @@ const header = document.querySelector("[data-header]");
 const nav = document.querySelector("[data-nav]");
 const navToggle = document.querySelector("[data-nav-toggle]");
 const navLinks = [...document.querySelectorAll(".site-nav a")];
+const heroSnap = document.querySelector("[data-hero-snap]");
+const bioSection = document.querySelector("#bio");
 
 const setHeaderState = () => {
   header.classList.toggle("is-scrolled", window.scrollY > 12);
@@ -25,6 +27,53 @@ navLinks.forEach((link) => {
 
 window.addEventListener("scroll", setHeaderState, { passive: true });
 setHeaderState();
+
+let heroSnapLocked = false;
+
+const snapToBio = () => {
+  if (!heroSnap || !bioSection || heroSnapLocked) return;
+  heroSnapLocked = true;
+  bioSection.scrollIntoView({ behavior: "smooth", block: "start" });
+  window.setTimeout(() => {
+    heroSnapLocked = false;
+  }, 900);
+};
+
+window.addEventListener(
+  "wheel",
+  (event) => {
+    if (!heroSnap || event.deltaY <= 8) return;
+    const heroBottomTrigger = heroSnap.offsetTop + heroSnap.offsetHeight * 0.45;
+    if (window.scrollY > heroBottomTrigger) return;
+    event.preventDefault();
+    snapToBio();
+  },
+  { passive: false }
+);
+
+let touchStartY = null;
+
+window.addEventListener(
+  "touchstart",
+  (event) => {
+    touchStartY = event.touches[0]?.clientY ?? null;
+  },
+  { passive: true }
+);
+
+window.addEventListener(
+  "touchend",
+  (event) => {
+    if (touchStartY === null || !heroSnap) return;
+    const touchEndY = event.changedTouches[0]?.clientY ?? touchStartY;
+    const swipedDownPage = touchStartY - touchEndY > 28;
+    const heroBottomTrigger = heroSnap.offsetTop + heroSnap.offsetHeight * 0.45;
+    touchStartY = null;
+    if (!swipedDownPage || window.scrollY > heroBottomTrigger) return;
+    snapToBio();
+  },
+  { passive: true }
+);
 
 const sections = navLinks
   .map((link) => document.querySelector(link.getAttribute("href")))
