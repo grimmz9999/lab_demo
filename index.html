@@ -8,7 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=47">
+  <link rel="stylesheet" href="styles.css?v=74">
+  <link rel="stylesheet" href="research-demo.css?v=10">
 </head>
 <body>
   <header class="site-header" data-header>
@@ -59,7 +60,7 @@
         </div>
         <div class="bio-details">
           <p>Dr. Sang-ri Yi is an Assistant Professor of Civil and Environmental Engineering at Rice University. Her work connects <em>uncertainty quantification</em> (UQ) methods with open-source simulation tools and regional resilience analysis.</p>
-          <p>Before joining Rice, she was an Assistant Project Scientist at the University of California, Berkeley and a Senior Software Developer at NHERI SimCenter.</p>
+          <p>Before joining Rice, she was an Assistant Project Scientist at the University of California, Berkeley and a Senior Software Developer at <a href="https://simcenter.designsafe-ci.org/" target="_blank" rel="noreferrer">NHERI SimCenter</a>.</p>
           <p>At SimCenter, she led the design and implementation of advanced UQ capabilities in open-source natural hazard modeling and simulation applications, including workflows for regional-scale surrogate modeling, variance-based sensitivity analysis, probabilistic inventory imputation, and multi-fidelity UQ.</p>
           <div class="profile-links" aria-label="Sang-ri Yi profile links">
             <a href="https://scholar.google.com/citations?hl=en&amp;user=2m0CFvgAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noreferrer"><span class="link-icon scholar-icon image-icon" aria-hidden="true"><img src="assets/google-scholar.png?v=2" alt=""></span><span>Google Scholar</span></a>
@@ -76,144 +77,69 @@
       </div>
     </section>
 
-    <section class="section" id="research">
+    <section class="section research-demo-section" id="research">
       <div class="section-head wide-head research-head">
         <div>
           <p class="section-kicker">Research</p>
-          <h2>Latest research directions.</h2>
-        </div>
-        <a class="section-view-link" href="https://uncertainty.blogs.rice.edu/research/" target="_blank" rel="noreferrer">View all</a>
-      </div>
-      <div class="research-layout">
-        <div class="research-feature-panel">
-          <article class="research-card featured-research">
-            <div class="research-card-image">
-              <img src="assets/research-surrogate.png" alt="Gaussian Process Surrogate Modeling">
-            </div>
-            <div class="research-card-body">
-              <div class="research-card-heading">
-                <h3>Surrogate Modeling</h3>
-              </div>
-              <small>Earthquake, wind, and fire risk analysis</small>
-            </div>
-          </article>
-        </div>
-        <div class="research-side-stack" aria-label="Additional research directions">
-          <article class="research-card">
-            <div class="research-card-image">
-              <img src="assets/research-resilience.png" alt="Resilience analysis">
-            </div>
-            <div class="research-card-body">
-              <div class="research-card-heading">
-                <h3>Resilience Assessment</h3>
-              </div>
-              <small>Structural systems and lifeline networks</small>
-            </div>
-          </article>
-          <article class="research-card">
-            <div class="research-card-image">
-              <img src="assets/research-regional.png" alt="Regional scale uncertainty quantification">
-            </div>
-            <div class="research-card-body">
-              <div class="research-card-heading">
-                <h3>Regional Risk Assessment</h3>
-              </div>
-              <small>Hurricane and earthquake risk workflows</small>
-            </div>
-          </article>
-          <article class="research-card">
-            <div class="research-card-image">
-              <img src="assets/research-random-fields.png" alt="Random vibrations and random fields">
-            </div>
-            <div class="research-card-body">
-              <div class="research-card-heading">
-                <h3>Random Vibrations & Fields</h3>
-              </div>
-              <small>Earthquake response and material corrosion</small>
-            </div>
-          </article>
+          <h2>Research directions.</h2>
         </div>
       </div>
+      <div id="research-demo-root" data-research-demo="modal"></div>
     </section>
 
     <section class="section top-section" id="team">
-      <div class="section-head wide-head">
-        <p class="section-kicker">People</p>
-        <h2>A growing research group at Rice University.</h2>
-        <p>The team section can expand as the lab grows, while keeping the current demo concise.</p>
+      <div class="section-head team-head">
+        <p class="section-kicker">Team</p>
       </div>
-      <div class="people-stack">
-        <article class="person-card">
-          <div class="avatar">SL</div>
-          <div>
-            <h3>Dr. Seonghyun Lim</h3>
-            <p>Postdoctoral researcher focused on stochastic modeling, seismic risk analysis, and system-level resilience assessment of complex infrastructure systems.</p>
-          </div>
-        </article>
+      <div class="team-roster">
+        <details class="team-group" open>
+          <summary class="team-group-toggle">
+            <span>Current Members</span>
+            <span aria-hidden="true"></span>
+          </summary>
+          <article class="team-member-card">
+            <figure class="team-member-photo">
+              <img src="assets/team-seonghyun-lim.png" alt="Dr. Seonghyun Lim">
+            </figure>
+            <div class="team-member-copy">
+              <p class="team-member-role">Postdoctoral Researcher</p>
+              <h3>Dr. Seonghyun Lim</h3>
+              <p class="team-member-bio">Seonghyun is a postdoctoral researcher at Rice University. His research focuses on uncertainty quantification and stochastic modeling for seismic risk analysis and resilience assessment of complex infrastructure systems under extreme events.</p>
+              <div class="profile-links team-member-links" aria-label="Seonghyun Lim profile links">
+                <a href="mailto:sl68@rice.edu"><span class="link-icon" aria-hidden="true">@</span><span>Email</span></a>
+                <a href="https://scholar.google.ca/citations?user=xd2oqD0AAAAJ&amp;hl=en" target="_blank" rel="noreferrer"><span class="link-icon scholar-icon image-icon" aria-hidden="true"><img src="assets/google-scholar.png?v=2" alt=""></span><span>Google Scholar</span></a>
+              </div>
+              <div class="team-topic-row">
+                <span class="team-topic-label">Topic:</span>
+                <div class="team-topic-list" aria-label="Research topics">
+                  <span>Uncertainty quantification in natural hazards</span>
+                  <span>System-level resilience assessment</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </details>
+        <details class="team-group">
+          <summary class="team-group-toggle">
+            <span>Alumni</span>
+            <span aria-hidden="true"></span>
+          </summary>
+          <p class="team-empty-state">No alumni listed yet.</p>
+        </details>
       </div>
     </section>
 
     <section class="section publication-section" id="publications">
       <div class="section-head wide-head">
         <p class="section-kicker">Publications</p>
+        <div class="publication-tabs" data-publication-tabs role="tablist" aria-label="Publication views">
+          <button class="publication-tab is-active" type="button" role="tab" aria-selected="true" data-publication-tab="publications">Publications</button>
+          <button class="publication-tab" type="button" role="tab" aria-selected="false" data-publication-tab="conferences">Conference Presentations</button>
+          <button class="publication-tab" type="button" role="tab" aria-selected="false" data-publication-tab="dataset">Dataset</button>
+          <span class="publication-tab-underline" data-publication-underline aria-hidden="true"></span>
+        </div>
       </div>
-      <div class="publication-board compact-publications">
-        <article class="publication-card">
-          <div class="publication-index">2026</div>
-          <div class="publication-type">Journal</div>
-          <div class="publication-body">
-            <h3>Reliable building inventory imputation for regional-scale risk assessment: an uncertainty-guided framework using spatially-enhanced Transformers.</h3>
-            <p class="authors">Z. Song, W. Jiang, S. Yi, and J. Zhang</p>
-            <p class="publisher">Reliability Engineering &amp; System Safety</p>
-          </div>
-        </article>
-        <article class="publication-card">
-          <div class="publication-index">2026</div>
-          <div class="publication-type">Journal</div>
-          <div class="publication-body">
-            <h3>Dimensionality reduction can be used as a surrogate model for high-dimensional forward uncertainty quantification.</h3>
-            <p class="authors">J. Kim, S. Yi, and Z. Wang</p>
-            <p class="publisher">Reliability Engineering &amp; System Safety</p>
-          </div>
-        </article>
-        <article class="publication-card">
-          <div class="publication-index">2026</div>
-          <div class="publication-type">Journal</div>
-          <div class="publication-body">
-            <h3>Seismic structural response and loss estimation for dense urban districts using neural network parameterized Gaussian process.</h3>
-            <p class="authors">B. Choi, S. Yi, and T. Kim</p>
-            <p class="publisher">Earthquake Engineering &amp; Structural Dynamics</p>
-          </div>
-        </article>
-        <article class="publication-card">
-          <div class="publication-index">2026</div>
-          <div class="publication-type">Conference</div>
-          <div class="publication-body">
-            <h3>Adaptation of stochastic emulation to shift of distribution.</h3>
-            <p class="authors">S. Lim and S. Yi</p>
-            <p class="publisher">Engineering Mechanics Institute Conference 2026 (EMI 2026)</p>
-          </div>
-        </article>
-        <article class="publication-card">
-          <div class="publication-index">2026</div>
-          <div class="publication-type">Conference</div>
-          <div class="publication-body">
-            <h3>Stochastic emulation for seismic risk assessment and the impact of intensity measure selection.</h3>
-            <p class="authors">S. Yi, A. Taflanidis, P. Toofani Movaghar, C. Galasso, and D. Vamvatsikos</p>
-            <p class="publisher">Engineering Mechanics Institute Conference 2026 (EMI 2026)</p>
-          </div>
-        </article>
-        <article class="publication-card">
-          <div class="publication-index">2025</div>
-          <div class="publication-type">Conference</div>
-          <div class="publication-body">
-            <h3>Multi-output stochastic emulation for predicting correlated aleatoric uncertainty.</h3>
-            <p class="authors">S. Yi and A. Taflanidis</p>
-            <p class="publisher">14th International Conference on Structural Safety and Reliability (ICOSSAR'25)</p>
-          </div>
-        </article>
-      </div>
-      <a class="publication-link" href="https://uncertainty.blogs.rice.edu/publications/" target="_blank" rel="noreferrer">View complete publication list</a>
+      <div class="publication-board compact-publications" data-publication-list></div>
     </section>
 
     <section class="section teaching-section" id="teaching">
@@ -227,33 +153,57 @@
             <span>Graduate / advanced undergraduate</span>
           </div>
           <p class="teaching-description">This course introduces computational methods in uncertainty quantification for civil, environmental, and other engineering fields, including global sensitivity analysis, multi-fidelity Monte Carlo, Gaussian process and polynomial chaos surrogate models, active learning, and dimensionality reduction.</p>
-          <a class="section-view-link teaching-link" href="https://uncertainty.blogs.rice.edu/teaching/" target="_blank" rel="noreferrer">View course page</a>
+          <a class="section-view-link teaching-link" href="https://courses.rice.edu/courses/courses/!SWKSCAT.cat?p_action=COURSE&amp;p_term=202620&amp;p_crn=25696" target="_blank" rel="noreferrer">View course page</a>
         </div>
         <figure class="teaching-feature">
-          <img src="assets/teaching-response-surface.png" alt="Response surface and sample projection">
+          <button class="teaching-zoom" type="button" data-site-zoom-src="assets/teaching-response-surface.png" data-site-zoom-alt="Response surface and sample projection" aria-label="Zoom image: Response surface and sample projection">
+            <img src="assets/teaching-response-surface.png" alt="Response surface and sample projection">
+          </button>
           <figcaption>Response surface and sample projection</figcaption>
         </figure>
       </div>
-      <div class="teaching-gallery" aria-label="Teaching visual topics">
-        <figure>
-          <img src="assets/teaching-pce.png" alt="Epistemic uncertainty in surrogate modeling">
-          <figcaption>Epistemic uncertainty in surrogate modeling</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/teaching-lhs.png" alt="Latin hypercube sampling">
-          <figcaption>Latin hypercube sampling</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/teaching-adaptive-design.png" alt="Adaptive design">
-          <figcaption>Adaptive design</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/teaching-mfmc.png" alt="Optimal budget allocation for Multi-fidelity Monte Carlo">
-          <figcaption>Optimal budget allocation for Multi-fidelity Monte Carlo</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/teaching-gp-fitting.png" alt="Gaussian process fitting">
-          <figcaption>Gaussian process fitting</figcaption>
+      <div class="teaching-carousel" data-teaching-carousel>
+        <button class="teaching-carousel-button previous" type="button" data-teaching-carousel-prev aria-label="Show previous teaching images">&lsaquo;</button>
+        <div class="teaching-gallery" aria-label="Teaching visual topics" data-teaching-gallery>
+          <figure>
+            <button class="teaching-zoom" type="button" data-site-zoom-src="assets/teaching-pce.png" data-site-zoom-alt="Epistemic uncertainty in surrogate modeling" aria-label="Zoom image: Epistemic uncertainty in surrogate modeling">
+              <img src="assets/teaching-pce.png" alt="Epistemic uncertainty in surrogate modeling">
+            </button>
+            <figcaption>Epistemic uncertainty in surrogate modeling</figcaption>
+          </figure>
+          <figure>
+            <button class="teaching-zoom" type="button" data-site-zoom-src="assets/teaching-lhs.png" data-site-zoom-alt="Latin hypercube sampling" aria-label="Zoom image: Latin hypercube sampling">
+              <img src="assets/teaching-lhs.png" alt="Latin hypercube sampling">
+            </button>
+            <figcaption>Latin hypercube sampling</figcaption>
+          </figure>
+          <figure>
+            <button class="teaching-zoom" type="button" data-site-zoom-src="assets/teaching-adaptive-design.png" data-site-zoom-alt="Adaptive design" aria-label="Zoom image: Adaptive design">
+              <img src="assets/teaching-adaptive-design.png" alt="Adaptive design">
+            </button>
+            <figcaption>Adaptive design</figcaption>
+          </figure>
+          <figure>
+            <button class="teaching-zoom" type="button" data-site-zoom-src="assets/teaching-mfmc.png" data-site-zoom-alt="Optimal budget allocation for Multi-fidelity Monte Carlo" aria-label="Zoom image: Optimal budget allocation for Multi-fidelity Monte Carlo">
+              <img src="assets/teaching-mfmc.png" alt="Optimal budget allocation for Multi-fidelity Monte Carlo">
+            </button>
+            <figcaption>Optimal budget allocation for Multi-fidelity Monte Carlo</figcaption>
+          </figure>
+          <figure>
+            <button class="teaching-zoom" type="button" data-site-zoom-src="assets/teaching-gp-fitting.png" data-site-zoom-alt="Gaussian process fitting" aria-label="Zoom image: Gaussian process fitting">
+              <img src="assets/teaching-gp-fitting.png" alt="Gaussian process fitting">
+            </button>
+            <figcaption>Gaussian process fitting</figcaption>
+          </figure>
+        </div>
+        <button class="teaching-carousel-button next" type="button" data-teaching-carousel-next aria-label="Show next teaching images">&rsaquo;</button>
+      </div>
+      <div class="site-lightbox" data-site-lightbox aria-hidden="true">
+        <button class="site-lightbox-scrim" type="button" data-site-lightbox-close aria-label="Close image preview"></button>
+        <figure class="site-lightbox-panel">
+          <button class="site-lightbox-close" type="button" data-site-lightbox-close aria-label="Close image preview">Close</button>
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
+          <figcaption></figcaption>
         </figure>
       </div>
     </section>
@@ -261,48 +211,31 @@
     <section class="section news-section" id="news">
       <div class="section-head wide-head">
         <p class="section-kicker">News</p>
-        <h2>Latest lab activity.</h2>
       </div>
-      <div class="timeline">
-        <article>
-          <span>May 2026</span>
-          <p>Seonghyun Lim, Taeha Kim, and Sang-ri Yi presented at EMI; Sang-ri also presented at ICCE and the NHERI Computational Symposium.</p>
-          <div class="timeline-media">
-            <img src="assets/news-emi-group.jpg" alt="Group photo from 2026 conference activity">
-          </div>
-        </article>
-        <article>
-          <span>Mar 2026</span>
-          <p>Sang-ri Yi presented in the Department of Civil and Environmental Engineering at the University of Notre Dame.</p>
-          <div class="timeline-media">
-            <img src="assets/news-nd-group.jpg" alt="Sang-ri Yi with Dr. Taflanidis group at Notre Dame">
-          </div>
-        </article>
-        <article>
-          <span>Feb 2026</span>
-          <p>Seonghyun Lim presented a poster at the 2026 Conference for Quantum Topology.</p>
-          <div class="timeline-media">
-            <img src="assets/news-cqt-seonghyun.jpg" alt="Seonghyun Lim presenting a poster">
-          </div>
-        </article>
-        <article>
-          <span>Dec 2025</span>
-          <p>Taeha Kim joined the group as a Visiting PhD Student from Seoul National University, and Sang-ri Yi joined the EMI Objective Resilience Committee.</p>
-        </article>
-      </div>
+      <div class="news-atlas" data-news-atlas></div>
+      <div class="news-archive" data-news-archive></div>
     </section>
 
     <section class="contact-section" id="contact">
-      <div>
-        <p class="section-kicker">Contact Us</p>
-        <h2>Prospective PhD students are welcome to reach out.</h2>
-        <p>The lab expects one or two PhD students starting Fall 2026 and is looking for students confident in engineering mathematics, statistics, and ethical research practice.</p>
+      <div class="contact-copy">
+        <h2 class="contact-title">Contact Us</h2>
+        <p class="contact-description">Dr. Sang-ri Yi's email, office phone number, and office location can be found via the profile link below.</p>
+        <a class="contact-profile-link" href="https://profiles.rice.edu/faculty/sang-ri-yi" target="_blank" rel="noreferrer">Rice profile <span aria-hidden="true">&rarr;</span></a>
       </div>
       <div class="contact-card">
         <span>Open Positions</span>
         <strong>Fall 2026 PhD opportunities</strong>
-        <p>Applicants are encouraged to introduce their background, research interests, long-term goals, and CV.</p>
-        <a class="button primary" href="https://uncertainty.blogs.rice.edu/contact-us/" target="_blank" rel="noreferrer">Contact Information</a>
+        <p>One or two PhD students are expected, starting Fall 2026.</p>
+        <details class="contact-guidance">
+          <summary class="button primary">Learn more</summary>
+          <div class="contact-guidance-body">
+            <h3>To Prospective PhD Students</h3>
+            <p>Thank you for your interest in joining our lab.</p>
+            <p>I am seeking PhD students who are confident in engineering mathematics and statistics and committed to ethical research practices. Please apply to the <a href="https://cee.rice.edu/academics/graduate-programs/phd-program" target="_blank" rel="noreferrer">Rice CEE PhD Program</a> and see more information on <a href="https://cee.rice.edu/academics/graduate-programs/graduate-admissions" target="_blank" rel="noreferrer">Graduate Admissions</a>.</p>
+            <p>Prospective PhD students are encouraged to contact Dr. Yi before or after applying. In the message, please briefly introduce your background, current research interests, and long-term goals, and attach your CV. You are welcome to include other documents, such as a class project you enjoyed, that show your strengths and style.</p>
+            <p>Sending a message is encouraged but not required. Every message will be reviewed carefully, though a response may not always be possible. If you have already submitted your application to Rice, please indicate that clearly.</p>
+          </div>
+        </details>
       </div>
     </section>
   </main>
@@ -317,6 +250,10 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="assets/research/research-content.js?v=4"></script>
+  <script src="assets/publications-data.js?v=5"></script>
+  <script src="assets/news/news-data.js?v=1"></script>
+  <script src="research-demo.js?v=9"></script>
+  <script src="script.js?v=9"></script>
 </body>
 </html>
